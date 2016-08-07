@@ -482,7 +482,7 @@ function agegate_options_menu() {
 					</td>
 				</tr>
 				<tr valign="top">
-					<th scope="row">Age input type:</th>
+					<th scope="row">Age input type: <br/><b>DOES NOT WORKING YET</b></th>
 					<td>	
 						<fieldset>
 							<label>
@@ -750,17 +750,19 @@ function cookie_function() {
 	$countries = get_option('group_country');
 	$domain = get_option('cookie_domain');
 	$redirect = get_option('type_redirect');
-	$time = get_option('cookie_time');
+	$time = (int) get_option('cookie_time');
+	//Hour to minutes
+	$time = $time*60;
 
 	if ( !empty($action) && !is_admin() ) :
 
 		if ( $domain == 'domain' ) :
 				
-			@setcookie($cookie_name, $age, $time, "/", $_SERVER['SERVER_NAME']);
+			@setcookie($cookie_name, $age, time()+60*$time, "/", $_SERVER['SERVER_NAME']);
 
 		else :
 
-			@setcookie($cookie_name, $age, $time);
+			@setcookie($cookie_name, $age, time()+60*$time);
 
 		endif;
 
