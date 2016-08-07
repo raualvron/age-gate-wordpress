@@ -1,0 +1,109 @@
+.age-gate {
+    height: 100%;
+    background: none repeat scroll 0 0 rgba(0,0,0,0.9);
+    direction: ltr;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999999;
+    backface-visibility: hidden;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .5s linear 0;
+    display: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+.age-gate-container {
+    margin: 8% auto 0;
+    max-width: 550px;
+    position: relative;
+}
+
+
+.age-gate-container .logo {
+    float: none!important;
+    margin: 0 auto 20px;
+    width: 50%;
+}
+
+
+#age-restricted {
+    clear: both;
+}
+
+.gate {
+    width: 100%;
+}
+
+.age-gate-container p {
+    color: #fff;
+    margin-bottom: 4px;
+}
+.dob {
+    text-align: center;
+}
+
+#age-gate select {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#age-gate .submit.btn {
+    background-color: #fff;
+    margin-top: 10px;
+    color: #000;
+}
+
+#age-gate input[type="text"],
+#age-gate input[type="date"],
+#age-gate input[type="datetime"],
+#age-gate input[type="email"],
+#age-gate input[type="number"],
+#age-gate input[type="search"],
+#age-gate input[type="time"],
+#age-gate input[type="url"],
+#age-gate input[type="password"],
+#age-gate textarea,
+#age-gate select {
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 60%;
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+#age-gate .error {
+background-color: rgba(255, 17, 17, 0.62);
+color: white;
+}
+
+#age-gate .form-day, #age-gate .form-year, #age-gate .form-month {
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.validation {
+    display:none;
+    background-color: rgba(255, 17, 17, 0.62);
+    color: white;
+    border-radius: 10px;
+    border-style:dashed;
+    border-width:2px;
+    padding: 5px;
+}
