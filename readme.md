@@ -14,6 +14,9 @@ Confirming that the user attempting to access your website is of the age require
 ## Age Gate Form
 <img src="http://i.imgur.com/yxNIiHJ.png" width="250">
 
+## Age Gate Plugin
+<img src="http://i.imgur.com/QmB6Q6Pg.png" width="250">
+
 ## Age Gate Validation
 <img src="http://i.imgur.com/eCBdNao.png" width="250">
 
