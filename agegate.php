@@ -750,6 +750,7 @@ function cookie_function() {
 	$countries = get_option('group_country');
 	$domain = get_option('cookie_domain');
 	$redirect = get_option('type_redirect');
+	$time = get_option('cookie_time');
 
 	if ( !empty($action) && !is_admin() ) :
 
